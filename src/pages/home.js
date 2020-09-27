@@ -7,7 +7,7 @@ import "./style.css";
 
 function Home() {
     return (
-        <Footer />
+        <Heading />
     )
 }
 
