@@ -1,0 +1,65 @@
+main {
+    left: 0;
+    right: 0;
+    width: 100% !important;
+    background-color: rgb(33, 11, 39);
+}
+
+.header {
+    height: 400px;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #0a2a43);
+    z-index: 10000;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+Header.Content {
+    position: relative;
+    color: rgb(231, 142, 107);
+    font-size: 6em;
+    font-weight: 500;
+    z-index: 1;
+    margin-right: 2.6em;
+    margin-top: 0px;
+    margin-left: 40px;
+}
+
+#mountain1 {
+    position: absolute;
+    left: 30%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 2;
+    fill-opacity: inherit;
+}
+
+#mountain2 {
+    z-index: 3;
+}
