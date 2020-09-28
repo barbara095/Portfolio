@@ -6,7 +6,7 @@ function Footer() {
     <footer className="footer">
     <div className="footer-header">
       Copyright Barbara Potiriadis</div>
-    <div className="contact-panel col-md-5">
+    <div className="contact-panel">
       <div className="form-group">
         <div className="footer-text">
           <a href="mailto:barbarap095@gmail.com">barbarap095@gmail.com</a>

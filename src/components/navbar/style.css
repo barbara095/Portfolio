@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #10101f;
+    background-color: rgb(26, 15, 51);
     height: 60px;
     display: flex;
     justify-content: start;
@@ -13,7 +13,7 @@
 }
 
 .nav-menu {
-    background-color: #10101f;
+    background-color: rgb(241, 144, 126);
     width: 220px;
     height: 100vh;
     display: flex;
@@ -51,7 +51,7 @@
 }
 
 .nav-text a:hover {
-    background-color: darkgrey;
+    background-color: rgb(255, 209, 200);
 }
 
 .nav-menu-items {
@@ -59,11 +59,10 @@
 }
 
 .navbar-toggle {
-    background-color: #10101f;
+    background-color: rgb(241, 144, 126);
     width: 100%;
-    height: 80px;
+    height: 60px;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 

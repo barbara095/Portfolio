@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     
-    <IconContext.Provider value={{color: '#fff'}}>
+    <IconContext.Provider value={{color: '#fff', backgroundColor: '#rgb(241, 144, 126)'}}>
     <div className="navbar">
         <Link to="#" className='menu-bars'>
           <FaIcons.FaBars onClick={showSidebar}/>

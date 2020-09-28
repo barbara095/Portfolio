@@ -2,7 +2,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* background: rgb(26, 15, 51); */
   
+}
+
+body::-webkit-scrollbar, .imgrev::before {
+  background: rgb(26, 15, 51);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(231, 142, 107);
+  height: 1px;
 }
 
 .home, 

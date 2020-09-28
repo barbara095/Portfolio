@@ -1,15 +1,24 @@
+body {
+    background-color: rgb(26, 15, 51);
+}
+
+.container-fluid {
+    margin: 0 auto 0 auto;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
 main {
     left: 0;
     right: 0;
-    width: 100% !important;
+    width: 100%;
     background-color: rgb(33, 11, 39);
 }
 
-.header {
-    height: 400px;
-}
 
-section {
+.section {
     position: relative;
     width: 100%;
     height: 100%;
@@ -19,7 +28,7 @@ section {
     align-items: center;
 }
 
-section:before {
+.section:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -40,18 +49,8 @@ section img {
     pointer-events: none;
 }
 
-Header.Content {
-    position: relative;
-    color: rgb(231, 142, 107);
-    font-size: 6em;
-    font-weight: 500;
-    z-index: 1;
-    margin-right: 2.6em;
-    margin-top: 0px;
-    margin-left: 40px;
-}
 
-#mountain1 {
+.mountain1 {
     position: absolute;
     left: 30%;
     width: 100%;
@@ -60,6 +59,29 @@ Header.Content {
     fill-opacity: inherit;
 }
 
-#mountain2 {
+.mountain2 {
     z-index: 3;
+}
+
+.about-me-1 {
+    position: relative;
+    justify-content: space-between;
+    float: left;
+    font-size: 12px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(219, 167, 155);
+    margin-left: 20px;
+}
+
+.main-name.center.aligned.header {
+    position: relative;
+    color: rgb(231, 142, 107);
+    font-size: 4em;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.resume {
+    padding-bottom: 10px;
+    float: right;
 }
