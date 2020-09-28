@@ -10,11 +10,11 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
     <div>
       <Navbar />
       <Switch>
-          <Route exact path="/react-portfolio" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/contact" component={Contact} />
           </Switch>
