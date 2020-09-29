@@ -57,7 +57,7 @@ section img {
 }
 
 .main-name.center.aligned.header {
-    position: relative;
+    /* position: relative; */
     color: rgb(231, 142, 107);
     font-size: 4em;
     font-weight: 600;

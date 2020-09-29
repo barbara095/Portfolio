@@ -1,7 +1,5 @@
-import React, { Component } from "react";
-import Navbar from '../components/navbar/index';
+import React from "react";
 import Heading from '../components/header/index';
-import Footer from '../components/footer/index';
 
 import "./style.css";
 

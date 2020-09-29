@@ -12,10 +12,14 @@ function Heading() {
     return (
 
         <div className="container-fluid" >
-            <Container fluid >
-                <Col size="sm-8">
+            <Container >
+                <div className="heading-name">
+                <Col size="sm-6 center" >
                     <Header as='h2' textAlign='center'
                         className="main-name center aligned header"> Hi there, <br /> I'm Barbara Potiriadis</Header>
+                    </Col>
+                    </div>
+
                     <Reveal className="resume" animated='move'>
                         <Reveal.Content visible>
                             <Image src={Profile} size='small' />
@@ -25,7 +29,7 @@ function Heading() {
                             >Resume</a>
                         </Reveal.Content>
                     </Reveal>
-                </Col>
+                
                 <div className="about">
                 <Grid columns={2}>
                     <Grid.Column>

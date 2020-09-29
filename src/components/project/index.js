@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 import { Container, Button, Icon, Image, Item, Label, Grid } from 'semantic-ui-react';
-import { Col } from '../Grid';
+import { Col, Row } from '../Grid';
+import Wrapper from '../wrapper';
 import Burger from '../../assets/images/burger.png';
 import Codequiz from '../../assets/images/codequiz.png';
 import Planner from '../../assets/images/dayplanner.png';
@@ -19,16 +19,15 @@ import './style.css';
 
 function Project() {
     return (
-        <div className='container'>
-        <Container>
-            <Col size="sm-6">
-            <Grid columns={3} divided>
+       <Wrapper className="wrapper">
+        <Container className='container'>  
+            
         <Item.Group divided>
             <Item>
                 <Item.Image src={Project1} />
                 <Item.Content>
                     <Item.Header as='a'>My dream Home</Item.Header>
-                    <Item.Description>An application designed to simplify and optimise the house hunting
+                    <Item.Description >An application designed to simplify and optimise the house hunting
                      journey to bring you the most relevant listings.</Item.Description>
                     <Item.Extra>
                         <Button primary floated='left' 
@@ -109,6 +108,23 @@ function Project() {
                     <Item.Extra>
                         <Button primary floated='left' 
                         a href={"https://github.com/barbara095/NoSQL-Fitness-Tracker"} 
+                        target="_blank" >Github</Button>   
+                    </Item.Extra>
+                </Item.Content>
+            </Item>
+
+            <Item>
+                <Item.Image src={Notes} />
+                <Item.Content>
+                    <Item.Header as='a'>Note Taker</Item.Header>
+                    <Item.Description>An Express Application that uses Node to write, save and delete notes!</Item.Description>
+                    <Item.Extra>
+                        <Button primary floated='left' 
+                        a href={"https://rocky-beach-44248.herokuapp.com/"} target="_blank" >App</Button>   
+                    </Item.Extra>
+                    <Item.Extra>
+                        <Button primary floated='left' 
+                        a href={"https://github.com/barbara095/Express-Note-Taker"} 
                         target="_blank" >Github</Button>   
                     </Item.Extra>
                 </Item.Content>
@@ -218,10 +234,11 @@ function Project() {
                 </Item.Content>
             </Item>
         </Item.Group>
-        </Grid>
-        </Col>
+     
+       
     </Container>
-    </div>
+    </Wrapper>
+  
     )
 }
 
