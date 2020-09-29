@@ -1,6 +1,8 @@
 .wrapper {
     width: 700px;
     margin: 0 auto 0 auto;
+    float: none;
+    display: block;
     background-color: rgb(26, 15, 51);
 }
 .container {
@@ -28,4 +30,3 @@
     width: 700px;
     padding-bottom: 30px;
 }
-

@@ -1,27 +1,40 @@
-import React from "react";
+import React, { useState, useEffect }from "react";
 import './style.css';
 import { Header, Container, Image, Reveal, Grid } from "semantic-ui-react";
-import { Col, Row } from '../Grid';
-import Skills from '../skills';
+import { Col } from '../Grid';
 import Wrapper from '../wrapper';
+import Skills from '../skills';
 import Resume from "../../assets/images/resume.pdf";
 import Profile from '../../assets/images/profile.png';
 import Mount1 from '../../assets/images/mountain1.png';
 import Mount2 from '../../assets/images/mountain2.png 14-09-49-651.png';
 
 function Heading() {
-    return (
-      
-        <div className="container-fluid" >
-              <Wrapper>
-            <Container >
-                <div className="heading-name">
-                <Col size="sm-6 center" >
-                    <Header as='h2' textAlign='center'
-                        className="main-name center aligned header"> Hi there, <br /> I'm Barbara Potiriadis</Header>
-                    </Col>
-                    </div>
 
+    const [ offSetY, setOffSetY ] = useState(0); 
+    const handleScroll = () => setOffSetY(window.pageYOffset);
+
+    
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+       
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    return (
+        <>
+        <div className="container-fluid">
+        <Wrapper>
+            <Container >
+                <div className="heading-name" >
+                <Col size="sm-6 center" style={{transform: `translateY(${offSetY * 0.3}px)`}}>
+                    <Header as='h2' textAlign='center'
+                        className="main-name center aligned header"       
+                        > Hi there, <br /> I'm Barbara Potiriadis</Header>
+                    </Col>
+                 
+                    </div>
+                    
                     <Reveal className="resume" animated='move'>
                         <Reveal.Content visible>
                             <Image centered src={Profile} size='small' />
@@ -32,11 +45,16 @@ function Heading() {
                             >Resume</a>
                         </Reveal.Content>
                     </Reveal>
-                
+                {/* <div className="section">
+                    <img src={Mount1} className="mountain1" alt="mountain-1" style={{width: `(100 - ${offSetY} / 20) + '%'`}}/>
+                    <img src={Mount2} className="mountain1" alt="mountain-2" style={{width: `(100 + ${offSetY} / 20) + '%'`}} />
+                </div> */}
+
                 <div className="about">
                 <Grid columns={2}>
                     <Grid.Column>
-                        <div className="about-me-1">
+                        <div className="about-me-1"
+                        style={{transform: `translateY(${offSetY * 0.2}px)`}}>
                             Full Stack Web Developer with a background in Market Research bringing a passion for writing clean code
                             to architect creative user-friendly interfaces. Curious and experimental by nature and Willing to leverage my creativity and problem
                             solving skills to build dynamic front and back-end applications.
@@ -47,7 +65,8 @@ function Heading() {
                         </div>
                     </Grid.Column>
                     <Grid.Column>
-                        <div className="about-me-2">
+                        <div className="about-me-2"
+                        style={{transform: `translateY(${offSetY * 0.35}px)`}}>
                             I have demonstrated a solid
                             ability to work under pressure in the field of market research to manage an online community/panel, including
                             survey scripting and designing email marketing campaigns, whilst working on internal projects using statistical
@@ -61,14 +80,11 @@ function Heading() {
                     </Grid.Column>
                 </Grid>
                 </div>
-                <div className="section">
-                    <img src={Mount1} className="mountain1" alt="mountain-1" />
-                    <img src={Mount2} className="mountain1" alt="mountain-2" />
-                </div>
+                <Skills />
             </Container>
             </Wrapper>
         </div>
-     
+      </>
     )
 }
 

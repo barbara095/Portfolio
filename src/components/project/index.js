@@ -16,12 +16,11 @@ import Fitness from '../../assets/images/fitness.png';
 import ReadMe from '../../assets/images/README.png';
 import './style.css';
 
-
 function Project() {
     return (
        
-        <Container className='container'>  
-            <Wrapper className="wrapper">
+        <Container className='container' >  
+            <Wrapper className='wrapper'>
             <Col size="sm-6 center" >
                     <Header as='h2' textAlign='center'
                         className="title center aligned header"> Projects</Header>

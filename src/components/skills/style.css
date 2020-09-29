@@ -1,0 +1,36 @@
+.wrapper {
+    padding-top: 50px;
+    float: left;
+    clear: both;
+    display: inline-block;
+    background-color: rgb(250, 158, 142);
+}
+
+
+.technologies {
+    width: 100%;
+    background-color: rgb(230, 147, 144);
+    width: 350px;
+    height: 250px;
+    display: block;
+    
+}
+
+.tech-title {
+    color: rgb(26, 15, 51);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.tech-list {
+    margin: auto;
+    padding: 10px;
+    align-content: space-around;
+    color: rgb(16, 4, 43);
+    font-weight: 400;
+    text-align: center;
+    top: 50%;
+    bottom: 50%;
+}
