@@ -9,12 +9,23 @@
     justify-content: center;
     display: flex;
     padding-bottom: 60px;
-    padding-top: 60px;
-    /* width: 100%; */
+    width: 100% !important;
     background-color: rgb(26, 15, 51);
-    /* z-index: 0; */
 }
 
 * {
     margin: 0 auto 0 auto;
 }
+
+.title.center.aligned.header {
+    position: relative;
+    color: rgb(231, 142, 107);
+    font-size: 4em;
+    font-weight: 600;
+    margin: 0 auto 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    padding-bottom: 30px;
+}
+

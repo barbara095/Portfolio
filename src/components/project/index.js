@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Button, Icon, Image, Item, Label, Grid } from 'semantic-ui-react';
-import { Col, Row } from '../Grid';
+import { Container, Button, Header, Item } from 'semantic-ui-react';
+import { Col } from '../Grid';
 import Wrapper from '../wrapper';
 import Burger from '../../assets/images/burger.png';
 import Codequiz from '../../assets/images/codequiz.png';
@@ -22,6 +22,10 @@ function Project() {
        
         <Container className='container'>  
             <Wrapper className="wrapper">
+            <Col size="sm-6 center" >
+                    <Header as='h2' textAlign='center'
+                        className="title center aligned header"> Projects</Header>
+                    </Col>
         <Item.Group divided>
             <Item>
                 <Item.Image src={Project1} />
