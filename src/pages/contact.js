@@ -1,10 +1,11 @@
 import React from "react";
-import Footer from '../components/footer/index';
-
+import ContactForm from '../components/contact/index';
 import "./style.css";
 
 function Contact() {
-    
+    return (
+        <ContactForm />
+    )
 }
 
-export default Contact ;
+export default Contact;
