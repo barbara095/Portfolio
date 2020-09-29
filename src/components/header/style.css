@@ -11,6 +11,10 @@
     padding-bottom: 50px;
 }
 
+.heading-name {
+    width: 600px;
+}
+
 .section {
     position: relative;
     width: 100%;
@@ -57,23 +61,37 @@ section img {
 }
 
 .main-name.center.aligned.header {
-    /* position: relative; */
+    position: relative;
     color: rgb(231, 142, 107);
     font-size: 4em;
     font-weight: 600;
-    z-index: 1;
     margin: 0 auto 0 auto;
     justify-content: center;
     align-items: center;
+    width: 700px;
 }
 
 .resume {
     padding-bottom: 10px;
-    float: right;
+    align-self: center;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    width: 200px;
+    z-index: 2;
+    height: 75%;
+    display: block;
+    margin: 0 auto 0 auto;
+
 }
 
 .about {
     padding-top: 20px;
     padding-left: 50px;
     color: rgb(219, 167, 155);
+}
+
+.image-text {
+    color: lightcoral;
+    font-size: 10px;
+    text-align: center;
 }

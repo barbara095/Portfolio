@@ -3,6 +3,7 @@ import './style.css';
 import { Header, Container, Image, Reveal, Grid } from "semantic-ui-react";
 import { Col, Row } from '../Grid';
 import Skills from '../skills';
+import Wrapper from '../wrapper';
 import Resume from "../../assets/images/resume.pdf";
 import Profile from '../../assets/images/profile.png';
 import Mount1 from '../../assets/images/mountain1.png';
@@ -10,8 +11,9 @@ import Mount2 from '../../assets/images/mountain2.png 14-09-49-651.png';
 
 function Heading() {
     return (
-
+      
         <div className="container-fluid" >
+              <Wrapper>
             <Container >
                 <div className="heading-name">
                 <Col size="sm-6 center" >
@@ -22,7 +24,8 @@ function Heading() {
 
                     <Reveal className="resume" animated='move'>
                         <Reveal.Content visible>
-                            <Image src={Profile} size='small' />
+                            <Image centered src={Profile} size='small' />
+                            <div className="image-text">Hover to view Resume</div>
                         </Reveal.Content>
                         <Reveal.Content hidden>
                             <a href={Resume} target="_blank" className="btn btn-primary"
@@ -40,14 +43,16 @@ function Heading() {
                             <br /><br />
                             Always attuned to the latest UX/UI designs and thrives on continuous learning and experimentation to develop polished and interactive
                             applications with a strong attention to detail. I'm an adventurous risk taker, whether I'm in the office or outdoors, who's not
-                            afraid to step outside the boundaries and tackle any challenge with persistance. I have demonstrated a solid
-                            ability to work under pressure in the field of market research to manage an online community/panel, including
-                            survey scripting and designing email marketing campaigns, whilst working on internal projects using statistical
-                            methods to draw inferences and insights for clients.
+                            afraid to step outside the boundaries and tackle any challenge with persistance. 
                         </div>
                     </Grid.Column>
                     <Grid.Column>
                         <div className="about-me-2">
+                            I have demonstrated a solid
+                            ability to work under pressure in the field of market research to manage an online community/panel, including
+                            survey scripting and designing email marketing campaigns, whilst working on internal projects using statistical
+                            methods to draw inferences and insights for clients.
+                            <br /><br />
                             When I'm not coding, you'll find me cooking up a storm in the kitchen, working out and devouring in
                             ice-cream. Travelling is a core passion of mine, where my travel highlights include the US and Europe. I am
                             eager to apply the many skills learned in this rewarding course to work as a professional in the field of Web
@@ -61,7 +66,9 @@ function Heading() {
                     <img src={Mount2} className="mountain1" alt="mountain-2" />
                 </div>
             </Container>
+            </Wrapper>
         </div>
+     
     )
 }
 
